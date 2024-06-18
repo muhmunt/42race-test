@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "f3b52834-44fc-42bc-abb6-97973ba6133b",
+		"name": "42Race",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6467035"
+	},
+	"item": [
+		{
+			"name": "Strava Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d5c9fb7a2009fd1249509b84fc04fe532c71a197",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3002/api/v1/login/strava",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"v1",
+						"login",
+						"strava"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Strava Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "bd61fa232e518ac0b081a00d76fea03da5279446",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "athleteId",
+						"value": "139973718"
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "localhost:3002/api/v1/strava/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"v1",
+						"strava",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4c24f3cea72b3214c304a18979c087903599d46e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "athleteId",
+						"value": "139973718"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:3002/api/v1/accounts/",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account By ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4c24f3cea72b3214c304a18979c087903599d46e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "athleteId",
+						"value": "139973718"
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "localhost:3002/api/v1/accounts/66700321912d31ea778eadc6",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"66700321912d31ea778eadc6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Activity",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4c24f3cea72b3214c304a18979c087903599d46e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "athleteId",
+						"value": "139973718"
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "localhost:3002/api/v1/activity?type=MountainBike&athlete=139973718",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"v1",
+						"activity"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "MountainBike"
+						},
+						{
+							"key": "athlete",
+							"value": "139973718"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Activity By ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4c24f3cea72b3214c304a18979c087903599d46e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "athleteId",
+						"value": "139973718"
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "localhost:3002/api/v1/activity/66711372fdf1865d14e31734",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"v1",
+						"activity",
+						"66711372fdf1865d14e31734"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Activity by ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4c24f3cea72b3214c304a18979c087903599d46e",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "athleteId",
+						"value": "139973718"
+					},
+					{
+						"key": "",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "localhost:3002/api/v1/activity/66713350ce0c3d75e2026306",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"v1",
+						"activity",
+						"66713350ce0c3d75e2026306"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
